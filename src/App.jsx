@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import bookcard from './components/bookcard.jsx'
+import BookCard from './components/bookcard.jsx'
 
 function App() {
   const books = [
@@ -37,9 +37,9 @@ function App() {
 
   return (
     <div className = "bo-list">
-      {books.map((book)=>{
-        <bookcard key = {book.id} book = {book}/>
-      })
+      {books.map((book)=>(
+        <BookCard key = {book.id} book = {book}/>
+      ))
 
       }
     </div>
